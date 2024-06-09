@@ -14,7 +14,7 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class='header'>
-                <img src='images/header.png' alt='Orbis Primus'>
+                <img src='images/header.png' alt='Orbis Primus' loading='eager'>
             </div>
         `
     }
