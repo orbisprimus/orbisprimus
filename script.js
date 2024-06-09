@@ -1,3 +1,14 @@
+function setActivePage() {
+    document.querySelectorAll("nav>a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList = "active";
+        }
+});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    setActivePage();
+});
 
 class AppHeader extends HTMLElement {
     connectedCallback() {
