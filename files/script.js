@@ -14,7 +14,7 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class='header'>
-                <img src='images/header.png' alt='Orbis Primus' loading='eager'>
+                <img src='files/images/header.png' alt='Orbis Primus' loading='eager'>
             </div>
         `
     }
@@ -39,8 +39,8 @@ class AppFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-                <a href='http://www.instagram.com/orbisprimus'><img src='images/instagram.png' alt='orbisprimus på Instagram'></a>
-                <a href='http://www.facebook.com/orbisprimus'><img src='images/facebook.png' alt='orbisprimus på Facebook'></a>
+                <a href='http://www.instagram.com/orbisprimus'><img src='files/images/instagram.png' alt='orbisprimus på Instagram'></a>
+                <a href='http://www.facebook.com/orbisprimus'><img src='files/images/facebook.png' alt='orbisprimus på Facebook'></a>
             </footer>
         `
     }
