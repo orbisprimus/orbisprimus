@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
 class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <div class='header'>
-                <img src='files/images/header.png' alt='Orbis Primus' loading='eager'>
+            <div class='header' role='banner'>
+                <a href="/" aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
             </div>
         `
     }
@@ -28,7 +28,6 @@ class AppNav extends HTMLElement {
                 <a href='/'>Om oss</a>
                 <a href='boka.html'>Boka oss</a>
                 <a href='ansok.html'>Ansök</a>
-                <a href='kontakt.html'>Kontakta oss</a>
             </nav>
         `
     }
@@ -39,8 +38,8 @@ class AppFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-                <a href='http://www.instagram.com/orbisprimus'><img src='files/images/instagram.png' alt='orbisprimus på Instagram'></a>
-                <a href='http://www.facebook.com/orbisprimus'><img src='files/images/facebook.png' alt='orbisprimus på Facebook'></a>
+                <a href='http://www.instagram.com/orbisprimus' aria-label='Orbis Primus på Instagram'><img src='files/images/instagram_light.png' alt=''></a>
+                <a href='http://www.facebook.com/orbisprimus' aria-label='Orbis Primus på Facebook'><img src='files/images/facebook_light.png' alt=''></a>
             </footer>
         `
     }

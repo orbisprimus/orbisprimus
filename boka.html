@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,28 +19,42 @@
             color: black;
             list-style: none;
         }
+        .important {
+            font-weight: bolder;
+            text-decoration: underline;
+            font-size: large;
+            border: 2px solid rgb(205, 0, 0);
+            border-radius: 2px;
+            color: rgb(205, 0, 0);
+            padding: 0.5em 0 0.5em 0;
+            margin-top: 1.5em;
+            margin-bottom: -1rem;
+        }
     </style>
 </head>
 
 <body>
+    <a class="skiplink" href="#main-boka">Hoppa till huvudinnehåll</a>
     <orbis-header></orbis-header>
     <orbis-nav></orbis-nav>
 
-    <main>
+    <main id="main-boka">
+
+        <p class="important">OBS: vi har en ny mailadress sedan juni 2023!</p>
 
         <h1>Vill ni att vi ska komma och gyckla för er?</h1>
-
-        <p>Vad roligt! Maila bokningsansvarig på <a href="mailto:bokning@orbisprimus.se">bokning@orbisprimus.se</a> med följande information:</p>
-
+        
+        <p>Vad roligt! Maila oss på <a href="mailto:orbisprimus.gyckel@gmail.com">orbisprimus.gyckel@gmail.com</a> med följande information:</p>
+        
         <ul>
             <li>Evenemangsbeskrivning</li>
             <li>Plats</li>
             <li>Datum och tid</li>
-            <li>Kontaktpersonens namn</li>
-            <li>Kontaktpersonens e-postadress</li>
+            <!-- <li>Kontaktpersonens namn</li> -->
+            <!-- <li>Kontaktpersonens e-postadress</li> -->
             <li>Eventuell övrig information</li>
         </ul>
-
+        
         <p>För att öka möjligheten att vi ska kunna komma och gyckla för er (vilket vi mer än gärna vill!) får ni gärna höra av er minst 2 veckor innan evengemanget.</p>
             
         <p>Vi ser fram emot att höra från er!</p>
