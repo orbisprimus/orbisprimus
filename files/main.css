@@ -67,6 +67,12 @@
         font-weight: bold;
         color: #581e34; /* orbis red: menu background and font color*/
         text-decoration: none;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        /* ...and now for the proper property */
+        transition:.5s;
     }
 
     a:hover {
