@@ -10,17 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setActivePage();
 });
 
-class AppHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-            <div class='header' role='banner'>
-                <a href="/" aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
-            </div>
-        `
-    }
-}
-window.customElements.define('orbis-header', AppHeader)
-
 class AppNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -33,6 +22,18 @@ class AppNav extends HTMLElement {
     }
 }
 window.customElements.define('orbis-nav', AppNav)
+
+class AppHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <div class='header' role='banner'>
+                <a href="/" aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
+            </div>
+            <orbis-nav></orbis-nav>
+        `
+    }
+}
+window.customElements.define('orbis-header', AppHeader)
 
 class AppFooter extends HTMLElement {
     connectedCallback() {
