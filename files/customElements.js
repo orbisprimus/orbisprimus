@@ -46,3 +46,16 @@ class AppFooter extends HTMLElement {
     }
 }
 window.customElements.define('orbis-footer', AppFooter)
+
+class Menu extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <div class="menu">
+                <a class="skiplink" href="#main-ansok">Hoppa till huvudinnehåll</a>
+                <orbis-header></orbis-header>
+                <orbis-footer></orbis-footer>
+            </div>
+        `
+    }
+}
+window.customElements.define('orbis-menu', Menu);
