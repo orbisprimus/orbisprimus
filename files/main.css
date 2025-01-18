@@ -221,7 +221,7 @@
         transition:.5s;
     }
     
-    a:hover {
+    p a:hover {
         text-decoration: underline;
     }
     
@@ -234,10 +234,6 @@
         display: flex;
         justify-content: center;
     }
-    
-    /* .header > a {
-        display: inline-block;
-    } */
     
     .header > a > img {
         object-fit: contain;
@@ -257,7 +253,7 @@
         top: 0;
     }
     
-    nav > a {
+    nav a {
         margin: 0;
         padding: 0.5em 1em 0.5em 1em;
         color: #efe5e5;
