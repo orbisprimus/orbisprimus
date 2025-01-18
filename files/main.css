@@ -1,157 +1,293 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@media all and (min-width: 690px) { /* wide */
+
+    body {
+        background-color: #efe5e5;
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: fit-content;
+        max-width:25em;
+        width: 30vw;
+        display: grid;
+        /* grid-auto-rows: 30vh; */
+        align-items: center;
+        background-color: #581e34;
+        height: 100%;
+    }
+
+    .skiplink {
+        position: absolute;
+        left: -100rem;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    .skiplink:focus {
+        position: fixed;
+        color: #efe5e5;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+
+    main {
+        background-color: #efe5e5;
+        padding-bottom: 5rem;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        color: #581e34;
+        margin-left: min(25em, 30vw);
+    }
+
+
+    h1, h2 {
+        font-family: "Goudy Bookletter 1911";
+        font-weight: 300;
+        padding-top: 2rem;
+    }
+
+    p {
+        margin: auto;
+        padding: 1em 1em 1em 1em;
+        line-height: 1.5;
+        max-width: 30rem;
+    }
+
+    a {
+        font-weight: bold;
+        color: #581e34; /* orbis red: menu background and font color*/
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        src: url('fonts/Roboto-Light.ttf');
+    }
+
+    @font-face {
+        font-family: 'Goudy Bookletter 1911';
+        src: url('fonts/GoudyBookletter1911-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: "Helvetica Neue";
+        src: url('fonts/HelveticaNeue-Light.otf');
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .header > a > img {
+        object-fit: contain;
+        object-position: center;
+        height: 30vh;
+    }
+
+    nav {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        background-color: #581e34;
+        /* margin-top: -5em; */
+        /* margin-bottom: 10em; */
+    }
+
+    nav > a {
+        margin: 0.2em;
+        padding: 0.5em 1em 0.5em 1em;
+        color: #efe5e5;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    nav > a:hover, nav > a.active {
+        background-color: #efe5e5;
+        text-decoration: none;
+        color: #581e34;
+    }
+
+    footer {
+        background-color: #581e34;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer > a > img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem 0.7rem 0 0.7rem;
+    }
 }
 
-body {
-    background-color: #efe5e5;
-    position: relative;
-    min-height: 100vh;
-    max-width: 100%;
-    width: 110vw;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    padding-bottom: 5rem;
-    padding-left: 2em;
-    padding-right: 2em;
-    text-align: center;
-    color: #5C1932;
-    font-family: "Roboto", "Helvetica Neue", sans-serif;
-}
-
-.skiplink {
-    position: absolute;
-    left: -100rem;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skiplink:focus {
-    position: fixed;
-    color: #efe5e5;
-    left: 0;
-    width: auto;
-    height: auto;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Goudy Bookletter 1911';
-    src: url('fonts/GoudyBookletter1911-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Helvetica Neue";
-    src: url('fonts/HelveticaNeue-Light.otf');
-}
-
-h1, h2 {
-    font-family: "Goudy Bookletter 1911";
-    font-weight: 300;
-    padding-top: 2rem;
-}
-
-p {
-    margin: auto;
-    padding: 1em 1em 1em 1em;
-    line-height: 1.5;
-    max-width: 30rem;
-}
-
-a {
-    font-family: "Roboto", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    color: #5C1932; /* orbis red: menu background and font color*/
-    text-decoration: none;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    /* ...and now for the proper property */
-    transition:.5s;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* @media all and (max-width: 750px) {
-} */
-/* @media all and (min-width: 750px) {
-} */
-
-.header {
-    height: 30vh;
-    width: 100%;
-    padding: 0;
-    margin: 0 0 -1px 0;
-    background-color: #5C1932;
-    display: flex;
-    justify-content: center;
-}
-
-.header > a {
-    display: inline-block;
-}
-
-
-.header > a > img {
-    object-fit: contain;
-    object-position: center;
-    height: 30vh;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center; /* Align vertical */
-    background-color: #5C1932;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-nav > a {
-    margin: 0;
-    padding: 0.5em 1em 0.5em 1em;
-    color: #efe5e5;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-}
-
-nav > a:hover, nav > a.active {
-    background-color: #efe5e5;
-    text-decoration: none;
-    color: #5C1932;
-}
-
-footer {
-    background-color: #5C1932;
-    padding: 0.3rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 3.6rem;
-    position: absolute;
-    bottom: 0;
-}
-
-footer > a > img {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem 0.7rem 0 0.7rem;
+@media all and (max-width: 690px) { /* Narrow */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #efe5e5;
+        position: relative;
+        min-height: 100vh;
+        max-width: 100%;
+        width: 110vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        padding-bottom: 5rem;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        color: #581e34;
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+    }
+    
+    .skiplink {
+        position: absolute;
+        left: -100rem;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    
+    .skiplink:focus {
+        position: fixed;
+        color: #efe5e5;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('fonts/Roboto-Light.ttf');
+    }
+    
+    @font-face {
+        font-family: 'Goudy Bookletter 1911';
+        src: url('fonts/GoudyBookletter1911-Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: "Helvetica Neue";
+        src: url('fonts/HelveticaNeue-Light.otf');
+    }
+    
+    h1, h2 {
+        font-family: "Goudy Bookletter 1911";
+        font-weight: 300;
+        padding-top: 2rem;
+    }
+    
+    p {
+        margin: auto;
+        padding: 1em 1em 1em 1em;
+        line-height: 1.5;
+        max-width: 30rem;
+    }
+    
+    a {
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+        font-weight: bold;
+        color: #581e34; /* orbis red: menu background and font color*/
+        text-decoration: none;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        /* ...and now for the proper property */
+        transition:.5s;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .header {
+        height: 30vh;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 -1px 0;
+        background-color: #581e34;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* .header > a {
+        display: inline-block;
+    } */
+    
+    .header > a > img {
+        object-fit: contain;
+        object-position: center;
+        height: 30vh;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center; /* Align vertical */
+        background-color: #581e34;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    
+    nav > a {
+        margin: 0;
+        padding: 0.5em 1em 0.5em 1em;
+        color: #efe5e5;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+    }
+    
+    nav > a:hover, nav > a.active {
+        background-color: #efe5e5;
+        text-decoration: none;
+        color: #581e34;
+    }
+    
+    footer {
+        background-color: #581e34;
+        padding: 0.3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 3.6rem;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    footer > a > img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem 0.7rem 0 0.7rem;
+    }
+    
 }
