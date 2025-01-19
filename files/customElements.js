@@ -15,6 +15,7 @@ class AppNav extends HTMLElement {
         this.innerHTML = `
             <nav id='navbar'>
                 <a href='/'>Om oss</a>
+                <a href='kontakt.html'>Styret</a>
                 <a href='boka.html'>Boka oss</a>
                 <a href='ansok.html'>Ansök</a>
             </nav>

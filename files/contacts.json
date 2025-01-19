@@ -1,0 +1,37 @@
+{
+    "Hanna Svensson": {
+        "Post": "Ordförande",
+        "Postnamn": "Livmodern",
+        "Bild": "images/contacts/ord.jpg"
+    },
+    "Anna Erlander Klein": {
+        "Post": "Kassör",
+        "Postnamn": "PMS",
+        "Bild": "images/contacts/kas.jpg"
+    },
+    "Mattis Osterling": {
+        "Post": "Bokningsansvarig",
+        "Postnamn": "Bindan",
+        "Bild": "images/contacts/bok.jpg"
+    },
+    "Miranda Anderberg": {
+        "Post": "Rekryteringsansvarig",
+        "Postnamn": "Äggledare",
+        "Bild": "images/contacts/rek.jpg"
+    },
+    "Matilda Anderberg": {
+        "Post": "Gyckelansvarig",
+        "Postnamn": "MUSik",
+        "Bild": "images/contacts/gyc.jpg"
+    },
+    "Emma Blomberg": {
+        "Post": "PR-ansvarig",
+        "Postnamn": "iPRen",
+        "Bild": "images/contacts/pra.jpg"
+    },
+    "Sabina Pegler": {
+        "Post": "Eventansvarig",
+        "Postnamn": "Eventansvarig",
+        "Bild": "images/contacts/eve.jpg"
+    }
+}
