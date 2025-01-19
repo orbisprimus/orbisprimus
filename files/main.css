@@ -1,3 +1,82 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Goudy Bookletter 1911';
+    src: url('fonts/GoudyBookletter1911-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('fonts/HelveticaNeue-Light.otf');
+}
+
+.skiplink {
+    position: absolute;
+    left: -100rem;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skiplink:focus {
+    position: fixed;
+    color: #efe5e5;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+
+h1, h2 {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+p {
+    margin: auto;
+    padding: 1em 1em 1em 1em;
+    line-height: 1.5;
+    max-width: 30rem;
+}
+
+a {
+    font-weight: bold;
+    color: #581e34; /* orbis red: menu background and font color*/
+    text-decoration: none;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+    
+p a:hover {
+    text-decoration: underline;
+}
+
+.header > a > img {
+    object-fit: contain;
+    object-position: center;
+    height: 30vh;
+}
+
+nav > a:hover, nav > a.active {
+    background-color: #efe5e5;
+    text-decoration: none;
+    color: #581e34;
+}
+
+footer > a > img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0.7rem 0 0.7rem;
+}
+
 @media all and (min-width: 690px) { /* wide */
 
     body {
@@ -16,27 +95,9 @@
         max-width:25em;
         width: 30vw;
         display: grid;
-        /* grid-auto-rows: 30vh; */
         align-items: center;
         background-color: #581e34;
         height: 100%;
-    }
-
-    .skiplink {
-        position: absolute;
-        left: -100rem;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
-
-    .skiplink:focus {
-        position: fixed;
-        color: #efe5e5;
-        left: 0;
-        width: auto;
-        height: auto;
     }
 
     main {
@@ -49,61 +110,10 @@
         margin-left: min(25em, 30vw);
     }
 
-
-    h1, h2 {
-        font-family: "Goudy Bookletter 1911";
-        font-weight: 300;
-        padding-top: 2rem;
-    }
-
-    p {
-        margin: auto;
-        padding: 1em 1em 1em 1em;
-        line-height: 1.5;
-        max-width: 30rem;
-    }
-
-    a {
-        font-weight: bold;
-        color: #581e34; /* orbis red: menu background and font color*/
-        text-decoration: none;
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        /* ...and now for the proper property */
-        transition:.5s;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    @font-face {
-        font-family: 'Roboto';
-        src: url('fonts/Roboto-Light.ttf');
-    }
-
-    @font-face {
-        font-family: 'Goudy Bookletter 1911';
-        src: url('fonts/GoudyBookletter1911-Regular.ttf');
-    }
-
-    @font-face {
-        font-family: "Helvetica Neue";
-        src: url('fonts/HelveticaNeue-Light.otf');
-    }
-
     .header {
         display: flex;
         justify-content: center;
         height: fit-content;
-    }
-
-    .header > a > img {
-        object-fit: contain;
-        object-position: center;
-        height: 30vh;
     }
 
     nav {
@@ -111,8 +121,6 @@
         text-align: center;
         justify-content: center;
         background-color: #581e34;
-        /* margin-top: -5em; */
-        /* margin-bottom: 10em; */
     }
 
     nav > a {
@@ -123,12 +131,6 @@
         border-bottom-left-radius: 7px;
     }
 
-    nav > a:hover, nav > a.active {
-        background-color: #efe5e5;
-        text-decoration: none;
-        color: #581e34;
-    }
-
     footer {
         background-color: #581e34;
         padding-top: 2rem;
@@ -136,11 +138,6 @@
         justify-content: center;
     }
 
-    footer > a > img {
-        width: 2rem;
-        height: 2rem;
-        margin: 0.5rem 0.7rem 0 0.7rem;
-    }
 }
 
 @media all and (max-width: 690px) { /* Narrow */
@@ -158,6 +155,7 @@
         width: 110vw;
         margin: 0;
         padding: 0;
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
     }
     
     main {
@@ -166,69 +164,6 @@
         padding-right: 2em;
         text-align: center;
         color: #581e34;
-        font-family: "Roboto", "Helvetica Neue", sans-serif;
-    }
-    
-    .skiplink {
-        position: absolute;
-        left: -100rem;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
-    
-    .skiplink:focus {
-        position: fixed;
-        color: #efe5e5;
-        left: 0;
-        width: auto;
-        height: auto;
-    }
-    
-    @font-face {
-        font-family: 'Roboto';
-        src: url('fonts/Roboto-Light.ttf');
-    }
-    
-    @font-face {
-        font-family: 'Goudy Bookletter 1911';
-        src: url('fonts/GoudyBookletter1911-Regular.ttf');
-    }
-    
-    @font-face {
-        font-family: "Helvetica Neue";
-        src: url('fonts/HelveticaNeue-Light.otf');
-    }
-    
-    h1, h2 {
-        font-family: "Goudy Bookletter 1911";
-        font-weight: 300;
-        padding-top: 2rem;
-    }
-    
-    p {
-        margin: auto;
-        padding: 1em 1em 1em 1em;
-        line-height: 1.5;
-        max-width: 30rem;
-    }
-    
-    a {
-        font-family: "Roboto", "Helvetica Neue", sans-serif;
-        font-weight: bold;
-        color: #581e34; /* orbis red: menu background and font color*/
-        text-decoration: none;
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        /* ...and now for the proper property */
-        transition:.5s;
-    }
-    
-    p a:hover {
-        text-decoration: underline;
     }
     
     .header {
@@ -239,12 +174,6 @@
         background-color: #581e34;
         display: flex;
         justify-content: center;
-    }
-    
-    .header > a > img {
-        object-fit: contain;
-        object-position: center;
-        height: 30vh;
     }
     
     nav {
@@ -269,12 +198,6 @@
         margin-right: 0.1em;
     }
     
-    nav > a:hover, nav > a.active {
-        background-color: #efe5e5;
-        text-decoration: none;
-        color: #581e34;
-    }
-    
     footer {
         background-color: #581e34;
         padding: 0.3rem;
@@ -284,12 +207,6 @@
         height: 3.6rem;
         position: absolute;
         bottom: 0;
-    }
-    
-    footer > a > img {
-        width: 2rem;
-        height: 2rem;
-        margin: 0.5rem 0.7rem 0 0.7rem;
     }
     
 }
