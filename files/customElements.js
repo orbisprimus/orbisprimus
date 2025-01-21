@@ -14,7 +14,7 @@ class AppNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav id='navbar'>
-                <a href='/'>Om oss</a>
+                <a href='index.html'>Om oss</a>
                 <a href='boka.html'>Boka oss</a>
                 <a href='ansok.html'>Ansök</a>
             </nav>
@@ -27,7 +27,7 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class='header' role='banner'>
-                <a href="/" aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
+                <a href='index.html' aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
             </div>
             <orbis-nav></orbis-nav>
         `
