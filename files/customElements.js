@@ -31,7 +31,7 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class='header' role='banner'>
-                <a href='index' aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
+                <a href='' aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
             </div>
             <orbis-nav></orbis-nav>
         `
