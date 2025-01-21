@@ -1,7 +1,11 @@
 function setActivePage() {
     document.querySelectorAll("nav>a").forEach((link) => {
-        if (link.href === window.location.href) {
+        if (
+            link.href === window.location.href
+            || link.href === window.location.href + "index.html"
+        ) {
             link.classList = "active";
+            return;
         }
 });
 }
