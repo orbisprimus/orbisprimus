@@ -2,7 +2,7 @@ function setActivePage() {
     document.querySelectorAll("nav>a").forEach((link) => {
         if (
             link.href === window.location.href
-            || link.href === window.location.href + "index.html"
+            || link.href === window.location.href + "index"
         ) {
             link.classList = "active";
             return;
@@ -18,9 +18,9 @@ class AppNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav id='navbar'>
-                <a href='index.html'>Om oss</a>
-                <a href='boka.html'>Boka oss</a>
-                <a href='ansok.html'>Ansök</a>
+                <a href='index'>Om oss</a>
+                <a href='boka'>Boka oss</a>
+                <a href='ansok'>Ansök</a>
             </nav>
         `
     }
@@ -31,7 +31,7 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class='header' role='banner'>
-                <a href='index.html' aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
+                <a href='index' aria-label="Om Orbis Primus"><img src='files/images/header.png' alt='' loading='eager'></a>
             </div>
             <orbis-nav></orbis-nav>
         `
