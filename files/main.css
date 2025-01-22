@@ -77,7 +77,7 @@ footer > a > img {
     margin: 0.5rem 0.7rem 0 0.7rem;
 }
 
-@media all and (min-width: 690px) { /* wide */
+@media all and (min-width: 900px) { /* wide */
 
     body {
         background-color: #efe5e5;
@@ -140,7 +140,7 @@ footer > a > img {
 
 }
 
-@media all and (max-width: 690px) { /* Narrow */
+@media all and (max-width: 900px) { /* Narrow */
     * {
         padding: 0;
         margin: 0;
