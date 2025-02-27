@@ -1,0 +1,40 @@
+#album {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#album img {
+    max-width: 30%;
+    height: auto;
+    margin: 1rem;
+    object-fit: contain;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#modal {
+    /* cursor: pointer; */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    align-content: center;
+}
+
+#modal #caption {
+    color: white;
+}
+
+#modal > img {
+    opacity: 1;
+    transition: 0.3s;
+    max-width: 90%;
+    max-height: 90%;
+}
