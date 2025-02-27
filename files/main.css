@@ -59,6 +59,18 @@ p a:hover {
     text-decoration: underline;
 }
 
+ul {
+    max-width: fit-content;
+    width: 20em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    padding-top: 0.5em;
+}
+
 .header > a > img {
     object-fit: contain;
     object-position: center;
