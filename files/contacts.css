@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactCard {
+    padding: 1rem;
+    margin: 1rem 1rem 0 1rem;
+    width: fit-content;
+}
+
+.contactCard > img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.contactCard > h1 {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+
+.contactCard > h2 {
+    font-size: large;
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+.contactCard > a {
+    font-weight: normal;
+}
+
+.contactCard > a:hover {
+    text-decoration: underline;
+}

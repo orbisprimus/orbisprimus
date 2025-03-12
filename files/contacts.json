@@ -1,42 +1,46 @@
-{
-    "Hanna Svensson": {
+[
+    {
+        "Namn": "Hanna Svensson",
         "Post": "Ordförande",
         "Postnamn": "Livmodern",
-        "Bild": "images/contacts/ord.jpg"
+        "Bild": "ord.jpg", 
+        "Email": "ordforande@orbisprimus.org"
     },
-    "Anna Erlander Klein": {
-        "Post": "Kassör",
-        "Postnamn": "PMS",
-        "Bild": "images/contacts/kas.jpg"
-    },
-    "Mattis Osterling": {
+    {
+        "Namn": "Mattis Osterling",
         "Post": "Bokningsansvarig",
         "Postnamn": "Bindan",
-        "Bild": "images/contacts/bok.jpg"
+        "Bild": "bok.jpg", 
+        "Email": "orbisprimus.gyckel@gmail.com"
     },
-    "Miranda Anderberg": {
+    {
+        "Namn": "Miranda Anderberg",
         "Post": "Rekryteringsansvarig",
         "Postnamn": "Äggledare",
-        "Bild": "images/contacts/rek.jpg"
+        "Bild": "rek.jpg"
     },
-    "Matilda Anderberg": {
+    {
+        "Namn": "Matilda Anderberg",
         "Post": "Gyckelansvarig",
         "Postnamn": "MUSik",
-        "Bild": "images/contacts/gyc.jpg"
+        "Bild": "gyc.jpg"
     },
-    "Emma Blomberg": {
+    {
+        "Namn": "Emma Blomberg",
         "Post": "PR-ansvarig",
         "Postnamn": "iPRen",
-        "Bild": "images/contacts/pra.jpg"
+        "Bild": "pra.jpg"
     },
-    "Sabina Pegler": {
+    {
+        "Namn": "Sabina Pegler",
         "Post": "Eventansvarig",
         "Postnamn": "Eventansvarig",
-        "Bild": "images/contacts/eve.jpg"
+        "Bild": "eve.jpg"
     },
-    "Therese Selberg": {
-        "Post": "Webbansvarig",
-        "Postnamn": "Webmaster", 
-        "Bild": ""
+    {
+        "Namn": "Anna Erlander Klein",
+        "Post": "Kassör",
+        "Postnamn": "PMS",
+        "Bild": "kas.jpg"
     }
-}
+]
