@@ -33,5 +33,10 @@
         "Post": "Eventansvarig",
         "Postnamn": "Eventansvarig",
         "Bild": "images/contacts/eve.jpg"
+    },
+    "Therese Selberg": {
+        "Post": "Webbansvarig",
+        "Postnamn": "Webmaster", 
+        "Bild": ""
     }
 }
