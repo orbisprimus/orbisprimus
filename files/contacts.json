@@ -1,46 +1,20 @@
 [
-    {
-        "Namn": "Hanna Svensson",
-        "Post": "Ordförande",
-        "Postnamn": "Livmodern",
-        "Bild": "ord.jpg", 
-        "Email": "ordforande@orbisprimus.org"
-    },
-    {
-        "Namn": "Mattis Osterling",
-        "Post": "Bokningsansvarig",
-        "Postnamn": "Bindan",
-        "Bild": "bok.jpg", 
-        "Email": "orbisprimus.gyckel@gmail.com"
-    },
-    {
-        "Namn": "Miranda Anderberg",
-        "Post": "Rekryteringsansvarig",
-        "Postnamn": "Äggledare",
-        "Bild": "rek.jpg"
-    },
-    {
-        "Namn": "Matilda Anderberg",
-        "Post": "Gyckelansvarig",
-        "Postnamn": "MUSik",
-        "Bild": "gyc.jpg"
-    },
-    {
-        "Namn": "Emma Blomberg",
-        "Post": "PR-ansvarig",
-        "Postnamn": "iPRen",
-        "Bild": "pra.jpg"
-    },
-    {
-        "Namn": "Sabina Pegler",
-        "Post": "Eventansvarig",
-        "Postnamn": "Eventansvarig",
-        "Bild": "eve.jpg"
-    },
-    {
-        "Namn": "Anna Erlander Klein",
-        "Post": "Kassör",
-        "Postnamn": "PMS",
-        "Bild": "kas.jpg"
-    }
+  {
+    "namn": "Hanna Svensson",
+    "post": "Ordförande",
+    "bild": "ord.jpg",
+    "email": "ordforande@orbisprimus.org"
+  },
+  {
+    "namn": "Mattis Osterling",
+    "post": "Bokningsansvarig",
+    "bild": "bok.jpg",
+    "email": "orbisprimus.gyckel@gmail.com"
+  },
+  {
+    "namn": "Therese Selberg",
+    "post": "Webmaster",
+    "bild": "web.jpg",
+    "email": "webmaster@orbisprimus.org"
+  }
 ]
