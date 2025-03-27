@@ -1,7 +1,22 @@
 [
-  { "filename": "one.jpg", "caption": "1" },
-  { "filename": "two.jpg", "caption": "2" },
-  { "filename": "three.jpg", "caption": "3" },
-  { "filename": "four.jpg", "caption": "4" },
-  { "filename": "five.jpg", "caption": "5" }
+  { "filename": "IMG20240925181248.jpg", "caption": "Orbis Primus 24/25", "header": true },
+  {
+    "title": "Kläck-off 2024",
+    "images": [
+      { "filename": "one.jpg", "caption": "1" },
+      { "filename": "two.jpg", "caption": "2" },
+      { "filename": "three.jpg", "caption": "3" },
+      { "filename": "four.jpg", "caption": "4" },
+      { "filename": "five.jpg", "caption": "" }
+    ]
+  },
+  {
+    "title": "DÖMD 2024",
+    "images": [
+      { "filename": "20240411_193855.jpg", "caption": "Kul på fulsittning" },
+      { "filename": "IMG_20240413_112803.jpg", "caption": "Redo att tävla" },
+      { "filename": "IMG_20240413_171552__01.jpg", "caption": "Finsittning" },
+      { "filename": "IMG20240412175024.jpg", "caption": "Fulvinsrundan" }
+    ]
+  }
 ]

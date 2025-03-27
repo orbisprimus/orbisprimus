@@ -34,7 +34,25 @@ const createImageDiv = image => {
         caption.innerText = img.alt;
     }
 
+    if (image.header) {
+        img.classList.add("header-img");
+    }
+
     return img;
+};
+
+const createAlbumDiv = album => {
+    let div = document.createElement("div");
+    let h2 = document.createElement("h2");
+
+    h2.innerText = album.title;
+    div.appendChild(h2);
+
+    for (image in album.images) {
+        div.appendChild(createImageDiv(album.images[image]));
+    }
+
+    return div;
 };
 
 const addImages = async () => {
@@ -43,9 +61,18 @@ const addImages = async () => {
         return;
     }
     const response = await fetch('/files/images/album.json');
-    const images = await response.json();
-    for (const image of images) {
-        div.appendChild(createImageDiv(image));
+    const albums = await response.json();
+    for (index in albums) {
+        if (albums[index].header) {
+            let subDiv = document.createElement("div");
+            let h1 = document.createElement("h1");
+            h1.innerText = albums[index].caption;
+            subDiv.appendChild(createImageDiv(albums[index]));
+            subDiv.appendChild(h1);
+            div.appendChild(subDiv);
+        } else {
+            div.appendChild(createAlbumDiv(albums[index]));
+        }
     }
 };
 
