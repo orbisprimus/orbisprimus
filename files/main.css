@@ -72,9 +72,7 @@ li {
 }
 
 .header > a > img {
-    object-fit: contain;
-    object-position: center;
-    height: 30vh;
+    height: 25vh;
 }
 
 nav > a:hover, nav > a.active {
@@ -126,6 +124,7 @@ footer > a > img {
         display: flex;
         justify-content: center;
         height: fit-content;
+        margin-bottom: 1em;
     }
 
     nav {
@@ -186,6 +185,7 @@ footer > a > img {
         background-color: #581e34;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
     nav {
