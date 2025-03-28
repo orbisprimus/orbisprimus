@@ -1,24 +1,20 @@
 #album {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
 #album img {
-    height: auto;
     margin: 1rem;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 5%;
     cursor: pointer;
 }
 
 #album img:not(.header-img) {
-    max-width: 30%;
-}
-
-#album .header-img {
-    max-width: 60%;
+    width: 30%;
+    aspect-ratio: 1;
 }
 
 #album h1 {
@@ -26,8 +22,14 @@
     padding-top: 0;
 }
 
+.sub-album {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #modal {
-    /* cursor: pointer; */
     display: none;
     position: fixed;
     z-index: 1;
@@ -40,13 +42,34 @@
     align-content: center;
 }
 
-#modal #caption {
-    color: white;
-}
-
 #modal > img {
     opacity: 1;
     transition: 0.3s;
     max-width: 90%;
     max-height: 90%;
+}
+
+@media all and (min-width: 900px) {
+    #album .header-img {
+        max-width: 90%;
+        max-height: 85vh;
+    }
+
+    #album img:not(.header-img) {
+        max-width: 600px;
+        min-width: 350px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #album .header-img {
+        max-width: 90%;
+        max-height: 55vh;
+    }
+
+    #album img:not(.header-img) {
+        max-width: 80vw;
+        width: min(80vw, 350px);
+        min-width: none;
+    }
 }
