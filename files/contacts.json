@@ -1,0 +1,20 @@
+[
+  {
+    "namn": "Hanna Svensson",
+    "post": "Ordförande",
+    "bild": "ord.jpg",
+    "email": "ordforande@orbisprimus.org"
+  },
+  {
+    "namn": "Mattis Osterling",
+    "post": "Bokningsansvarig",
+    "bild": "bok.jpg",
+    "email": "orbisprimus.gyckel@gmail.com"
+  },
+  {
+    "namn": "Therese Selberg",
+    "post": "Hemsideansvarig",
+    "bild": "web.jpg",
+    "email": "webmaster@orbisprimus.org"
+  }
+]
