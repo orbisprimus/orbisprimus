@@ -111,6 +111,7 @@ footer > a > img {
     }
 
     main {
+        grid-row: 1;
         background-color: #efe5e5;
         padding-bottom: 5rem;
         padding-left: 2em;
