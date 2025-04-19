@@ -90,8 +90,9 @@ footer > a > img {
 @media all and (min-width: 900px) { /* wide */
 
     body {
+        margin: 0;
         background-color: #efe5e5;
-        min-height: 100vh;
+        height: 100vh;
         display: grid;
         align-items: center;
         font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -162,7 +163,7 @@ footer > a > img {
     body {
         background-color: #efe5e5;
         position: relative;
-        min-height: 100vh;
+        height: 100vh;
         max-width: 100%;
         width: 110vw;
         margin: 0;
