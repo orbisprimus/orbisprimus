@@ -90,8 +90,9 @@ footer > a > img {
 @media all and (min-width: 900px) { /* wide */
 
     body {
+        margin: 0;
         background-color: #efe5e5;
-        min-height: 100vh;
+        height: 100vh;
         display: grid;
         align-items: center;
         font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -111,6 +112,7 @@ footer > a > img {
     }
 
     main {
+        grid-row: 1;
         background-color: #efe5e5;
         padding-bottom: 5rem;
         padding-left: 2em;
@@ -161,7 +163,7 @@ footer > a > img {
     body {
         background-color: #efe5e5;
         position: relative;
-        min-height: 100vh;
+        height: 100vh;
         max-width: 100%;
         width: 110vw;
         margin: 0;
@@ -217,7 +219,7 @@ footer > a > img {
         display: flex;
         justify-content: center;
         height: 3.6rem;
-        position: absolute;
+        position: fixed;
         bottom: 0;
     }
     
