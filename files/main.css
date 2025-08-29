@@ -40,6 +40,10 @@ p {
     margin: auto;
     padding: 1em 1em 1em 1em;
     line-height: 1.5;
+    max-width: 40rem;
+}
+
+#main-index > p {
     max-width: 30rem;
 }
 
