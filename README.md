@@ -1,6 +1,6 @@
 ﻿# Orbis Primus hemsida
 
-Detta är ett gitrepo för Orbis Primus hemsida. Allt är skrivet i HTML, CSS och JavaScript för att göra den så enkel så möjlig att underhålla, samt inte helt omöjlig att uppdatera för någon som inte är en van programmerare.
+Detta är ett gitrepo för Orbis Primus hemsida. Allt är skrivet i HTML, CSS och Javascript för att göra den så enkel så möjlig att underhålla, samt inte helt omöjlig att uppdatera för någon som inte är en van programmerare.
 
 ## Uppdatera text
 
