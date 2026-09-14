@@ -91,6 +91,11 @@ footer > a > img {
     margin: 0.5rem 0.7rem 0 0.7rem;
 }
 
+.lyrics {
+    padding-top: 0;
+    position: relative;
+}
+
 @media all and (min-width: 900px) { /* wide */
 
     body {
@@ -153,6 +158,30 @@ footer > a > img {
         padding-top: 2rem;
         display: flex;
         justify-content: center;
+    }
+
+    .lyrics::before, .lyrics::after {
+        content: "";
+        position: absolute;
+        width: 12rem;
+        height: 12rem;
+        top: 50%;
+
+        background-image: url("images/signhild.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        transform: translateY(-400%);
+    }
+
+    .lyrics::before {
+        left: -10rem;
+    }
+
+    .lyrics::after {
+        right: -10rem;
+        transform: translateY(-400%) scaleX(-1);
     }
 
 }
@@ -225,6 +254,31 @@ footer > a > img {
         height: 3.6rem;
         position: fixed;
         bottom: 0;
+        z-index: 3;
+    }
+
+    .lyrics::before, .lyrics::after {
+        content: "";
+        position: absolute;
+        width: 8rem;
+        height: 8rem;
+        top: 0;
+
+        background-image: url("images/signhild.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        transform: translateY(11rem);
+    }
+
+    .lyrics::before {
+        left: -2rem;
+    }
+
+    .lyrics::after {
+        right: -2rem;
+        transform: translateY(11rem) scaleX(-1);
     }
     
 }
